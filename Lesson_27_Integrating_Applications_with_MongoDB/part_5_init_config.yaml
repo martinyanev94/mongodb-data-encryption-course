@@ -1,0 +1,4 @@
+init_config:
+
+instances:
+  - server: mongodb://<user>:<password>@localhost:27017
