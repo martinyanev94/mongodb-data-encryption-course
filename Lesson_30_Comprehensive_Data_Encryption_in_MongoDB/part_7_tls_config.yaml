@@ -1,0 +1,4 @@
+tls:
+    mode: requireTLS
+    certificateKeyFile: /path/to/certAndKey.pem
+    CAFile: /path/to/ca.pem
