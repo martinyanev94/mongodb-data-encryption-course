@@ -1,0 +1,5 @@
+{ "_id": 1, "name": "Laptop", "price": 1200, "taxRate": 0.1 }
+{ "_id": 2, "name": "Smartphone", "price": 800, "taxRate": 0.08 }
+db.products.aggregate([
+  { $addFields: { finalPrice: { $multiply: ["$price", { $add: [1, "$taxRate"] }] } } }
+])
