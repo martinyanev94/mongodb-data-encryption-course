@@ -1,0 +1,14 @@
+{
+  "_id": ObjectId("60b7313f6542e5294806ce58"),
+  "product": "Widget A",
+  "category": "Gadgets",
+  "amount": 100
+}
+const salesSummary = await db.collection('sales').aggregate([
+  {
+    $group: {
+      _id: "$category",
+      total_sales: { $sum: "$amount" }
+    }
+  }
+]).toArray();
