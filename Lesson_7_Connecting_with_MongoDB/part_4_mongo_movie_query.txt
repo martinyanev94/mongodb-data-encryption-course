@@ -1,0 +1,10 @@
+gem 'mongo'
+require 'mongo'
+
+# Create a client
+client = Mongo::Client.new(['127.0.0.1:27017'], database: 'productions')
+movies = client[:movies]
+
+# Query for a movie
+movie = movies.find(title: '200 meters').first
+puts movie
