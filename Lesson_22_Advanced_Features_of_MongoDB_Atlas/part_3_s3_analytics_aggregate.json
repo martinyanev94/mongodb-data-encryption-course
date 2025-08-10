@@ -1,0 +1,16 @@
+{
+    "type": "s3",
+    "bucket": "your-bucket-name",
+    "prefix": "path/to/your/data/"
+}
+const analyticsResults = db.dataLake.collection("yourCollection").aggregate([
+    {
+        $match: { category: "technology" }
+    },
+    {
+        $group: {
+            _id: "$author",
+            totalPosts: { $sum: 1 }
+        }
+    }
+]);
