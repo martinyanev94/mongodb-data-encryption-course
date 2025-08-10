@@ -1,0 +1,3 @@
+CREATE FULLTEXT INDEX ON Articles(Content) 
+KEY INDEX pk_article_id 
+WITH CHANGE_TRACKING AUTO;
