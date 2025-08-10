@@ -1,0 +1,27 @@
+gem 'mongoid', '~> 7.3'
+rails g mongoid:config
+development:
+  clients:
+    default:
+      database: myapp_development
+      hosts:
+        - localhost:27017
+      options:
+        max_pool_size: 5
+class User
+  include Mongoid::Document
+
+  field :name, type: String
+  field :email, type: String
+  field :age, type: Integer
+end
+class User
+  include Mongoid::Document
+
+  field :name, type: String
+  field :email, type: String
+  field :age, type: Integer
+
+  validates :name, presence: true
+  validates :email, uniqueness: true
+end
