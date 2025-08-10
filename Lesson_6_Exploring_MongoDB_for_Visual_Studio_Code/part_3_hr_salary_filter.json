@@ -1,0 +1,9 @@
+{
+  "department": "HR"
+}
+{
+  "department": "HR",
+  "salary": {
+    "$gt": 50000
+  }
+}
