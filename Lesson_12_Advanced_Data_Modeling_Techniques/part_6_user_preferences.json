@@ -1,0 +1,8 @@
+{
+  "_id": ObjectId("60b7317f6542e5294806ce5c"),
+  "user_id": "user123",
+  "preferences": {
+    "theme": "dark",
+    "notifications": true
+  }
+}
