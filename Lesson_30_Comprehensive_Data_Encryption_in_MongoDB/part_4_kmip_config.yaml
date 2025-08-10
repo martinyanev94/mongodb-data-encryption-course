@@ -1,0 +1,8 @@
+security:
+  enableEncryption: true
+  kmip:
+    keyIdentifier: <keyID>
+    serverName: <kmipServer>
+    serverCAFile: <pathToCAFile>
+    clientCertificateFile: <pathToClientCert>
+    clientPrivateKeyFile: <pathToClientKey>
