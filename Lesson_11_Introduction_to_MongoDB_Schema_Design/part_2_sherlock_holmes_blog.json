@@ -1,0 +1,17 @@
+{
+  "_id": ObjectId("5ef2d4b45b7f11b6d7a"),
+  "title": "The Adventures of Sherlock Holmes",
+  "body": "Content of the blog post...",
+  "comments": [
+    {
+      "user": "John",
+      "comment": "Great post!",
+      "date": ISODate("2023-10-01T12:00:00Z")
+    },
+    {
+      "user": "Mary",
+      "comment": "Very insightful!",
+      "date": ISODate("2023-10-02T14:00:00Z")
+    }
+  ]
+}
