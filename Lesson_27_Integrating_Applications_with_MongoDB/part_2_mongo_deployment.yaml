@@ -1,0 +1,22 @@
+apiVersion: mongodbcommunity.mongodb.com/v1
+kind: MongoDBCommunity
+metadata:
+  name: my-mongo-db
+  namespace: mongodb
+spec:
+  members: 3  # Number of replicas
+  type: ReplicaSet
+  version: "5.0"  # MongoDB version
+  security:
+    authentication:
+      modes: ["SCRAM"]
+    users:
+      - name: my-mongo-user
+        db: admin
+        passwordSecretRef:
+          name: my-mongo-password
+        roles:
+          - name: readWrite
+            db: my-database
+kubectl apply -f mongoKubernetesOp.yaml
+kubectl get pods -n mongodb
