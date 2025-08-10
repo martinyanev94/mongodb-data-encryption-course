@@ -1,0 +1,19 @@
+// Post Collection
+{
+  "_id": ObjectId("5ef2d4b45b7f11b6d7a"),
+  "title": "Understanding MongoDB",
+  "body": "A comprehensive guide...",
+  "comments": [
+    ObjectId("60d7c4f1f954e0c4323f4e31"),
+    ObjectId("60d7c4f1f954e0c4323f4e32")
+  ]
+}
+
+// Comment Collection
+{
+  "_id": ObjectId("60d7c4f1f954e0c4323f4e31"),
+  "user": "Mark",
+  "comment": "Fantastic read!",
+  "post_id": ObjectId("5ef2d4b45b7f11b6d7a"),
+  "date": ISODate("2023-10-01T12:00:00Z")
+}
