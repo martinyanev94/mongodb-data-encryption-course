@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "user": "alice",
+      "db": "admin"
+    }
+  ],
+  "atype": "insert",
+  "params.ns": "myDatabase.myCollection"
+}
