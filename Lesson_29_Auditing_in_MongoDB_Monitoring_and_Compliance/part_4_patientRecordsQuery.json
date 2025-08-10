@@ -1,0 +1,6 @@
+{
+  "params.ns": "healthcare.patientRecords",
+  "atype": {
+    "$in": ["insert", "update", "delete"]
+  }
+}
