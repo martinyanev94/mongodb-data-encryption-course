@@ -1,0 +1,13 @@
+[
+  {
+    "$match": {
+      "department": "HR"
+    }
+  },
+  {
+    "$group": {
+      "_id": null,
+      "averageSalary": { "$avg": "$salary" }
+    }
+  }
+]
