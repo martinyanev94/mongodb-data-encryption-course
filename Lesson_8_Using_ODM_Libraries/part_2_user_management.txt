@@ -1,0 +1,6 @@
+user = User.new(name: "John Doe", email: "john@example.com", age: 30)
+user.save
+User.create(name: "Jane Doe", email: "jane@example.com", age: 28)
+user = User.find(user_id)
+users = User.where(:age.gt => 25)
+users = User.where(:name => /^J/, :age.lt => 35)
