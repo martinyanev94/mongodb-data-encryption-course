@@ -1,0 +1,11 @@
+{
+  "_id": ObjectId("5ef2d4b45b7f11b6d7a"),
+  "user_id": "Sherlock Holmes",
+  "age": 40,
+  "address": {
+    "Country": "England",
+    "City": "London",
+    "Street": "221B Baker St."
+  },
+  "Hobbies": ["violin", "crime-solving"]
+}
