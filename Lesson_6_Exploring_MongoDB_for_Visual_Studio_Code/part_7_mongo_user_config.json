@@ -1,0 +1,11 @@
+{
+    "db": "yourDatabase",
+    "username": "newUser",
+    "password": "securePassword",
+    "roles": [
+        {
+            "role": "readWrite",
+            "db": "yourDatabase"
+        }
+    ]
+}
