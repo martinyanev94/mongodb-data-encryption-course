@@ -1,0 +1,7 @@
+{
+  "_id": ObjectId("60b7315f6542e5294806ce5a"),
+  "user_id": "user123",
+  "name": "John Doe",
+  "email": "johndoe@example.com"
+}
+sh.shardCollection("myDatabase.users", { user_id: 1 });
