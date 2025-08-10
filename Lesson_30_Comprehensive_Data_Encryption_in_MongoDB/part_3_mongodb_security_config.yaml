@@ -1,0 +1,3 @@
+security:
+  enableEncryption: true
+  encryptionKeyFile: /path/to/your/mongodb-keyfile
