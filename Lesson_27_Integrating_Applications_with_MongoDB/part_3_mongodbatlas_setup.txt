@@ -1,0 +1,16 @@
+provider "mongodbatlas" {
+  public_key  = "your_public_key"
+  private_key = "your_private_key"
+}
+
+resource "mongodbatlas_cluster" "my_cluster" {
+  project_id = "your_project_id"
+  name       = "my-atlas-cluster"
+  provider_name = "AWS"
+  region_name = "US_EAST_1"
+  num_shards   = 1
+  replication_factor = 3
+}
+terraform init
+terraform plan
+terraform apply
