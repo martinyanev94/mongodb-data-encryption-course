@@ -1,0 +1,5 @@
+{
+  "role": "readWrite",
+  "database": "myDatabase",
+  "user": "developerUser"
+}
