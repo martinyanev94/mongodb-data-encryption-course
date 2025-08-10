@@ -1,0 +1,6 @@
+user = User.find(user_id)
+user.update(name: "John Smith", age: 31)
+User.where(email: "john@example.com").update_one("$set" => { age: 32 })
+user = User.find(user_id)
+user.destroy
+User.where(age.lt => 20).delete_all
