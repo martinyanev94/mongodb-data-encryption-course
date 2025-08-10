@@ -1,0 +1,16 @@
+{
+  "_id": ObjectId("60b7316f6542e5294806ce5b"),
+  "account_id": ObjectId("60b7315f6542e5294806ce5a"),
+  "event_type": "DEPOSIT",
+  "amount": 100,
+  "timestamp": ISODate("2023-08-01T12:00:00Z")
+}
+const totalDeposits = await db.collection('events').aggregate([
+  { $match: { account_id: accountId, event_type: "DEPOSIT" } },
+  { $group: { _id: null, total: { $sum: "$amount" }} }
+]).toArray();
+
+const totalWithdrawals = await db.collection('events').aggregate([
+  { $match: { account_id: accountId, event_type: "WITHDRAWAL" } },
+  { $group: { _id: null, total: { $sum: "$amount" }} }
+]).toArray();
