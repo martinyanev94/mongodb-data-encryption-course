@@ -1,0 +1,16 @@
+class User
+  include Mongoid::Document
+
+  field :name, type: String
+  has_many :posts
+end
+
+class Post
+  include Mongoid::Document
+
+  field :title, type: String
+  field :content, type: String
+  belongs_to :user
+end
+user = User.create(name: "AuthorName")
+post = user.posts.create(title: "My First Post", content: "Hello world!")
