@@ -1,0 +1,7 @@
+{
+  "_id": ObjectId("60b7314f6542e5294806ce59"),
+  "content": "This is a great product!",
+  "entity_id": ObjectId("60b7313f6542e5294806ce58"),
+  "entity_type": "product"
+}
+const productComments = await db.collection('comments').find({ entity_type: "product", entity_id: productId }).toArray();
